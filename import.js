@@ -15,7 +15,7 @@ const loadedSources = new Set();
 // メイン処理
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    // 必要なライブラリを順に読み込む
+    // 必要なライブラリを順に読み込む(キャッシュにすると早くなる)
     await loadScript("https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js");
     await loadScript("https://cdn.jsdelivr.net/npm/markdown-it-footnote/dist/markdown-it-footnote.min.js");
     await loadScript("https://cdn.jsdelivr.net/npm/markdown-it-task-lists/dist/markdown-it-task-lists.min.js");
@@ -94,9 +94,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await Promise.all(loadPromises);
 
-    // style.css を読み込み（存在チェック付き）
+    // style.css を読み込み(存在チェック付き)
     try {
-      const res = await fetch("style.css", { method: "HEAD" });
+      const res = await fetch("style.css", {
+        method: "HEAD"
+      });
       if (res.ok) {
         const link = document.createElement("link");
         link.rel = "stylesheet";

@@ -94,7 +94,7 @@ li {
   margin-bottom: 0.3em;
 }
 
-/* チェックリスト（markdown-it-task-lists対応） */
+/* チェックリスト(markdown-it-task-lists対応) */
 input[type="checkbox"] {
   margin-right: 0.5em;
   transform: scale(1.2);
@@ -188,12 +188,12 @@ hr {
   margin-bottom: 0.5em;
 }
 
-/* タスクリスト（チェックリスト同様） */
+/* タスクリスト(チェックリスト同様) */
 .task-list-item {
   list-style: none;
 }
 
-/* 数式（MathJax対応） */
+/* 数式(MathJax対応) */
 mjx-container[jax="CHTML"] {
   font-size: 1.1em !important;
   line-height: 1.2 !important;
@@ -213,7 +213,7 @@ div.math.display {
   text-align: center;
 }
 
-/* レスポンシブ対応（テーブルなど） */
+/* レスポンシブ対応(テーブルなど) */
 @media (max-width: 600px) {
 
   table,

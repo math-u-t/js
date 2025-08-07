@@ -1,15 +1,18 @@
-# src
+# src - JavaScriptフレームワーク
 
-JavaScriptフレームワーク
+このプロジェクトは、JavaScriptのフレームワークです。
+**MITライセンス**で公開しています。([ライセンスを見る](LICENSE))
 
-検索できるページは[こちら](https://math-u-t.github.io/src)
+**プロジェクトの詳細は[こちらのページ](https://math-u-t.github.io/src)から検索できます。**
 
-[MITライセンス](LICENSE)です
+## 各ファイルについて
 
-## `copy.js`[未完成]
+### `import.js`[v1.0.0]
 
-リポジトリは[こちら](docs/copy.md)
+- 概要: 安定版としてリリースされたモジュール読み込み用スクリプトです。
+- 詳細ドキュメント: [import.md](docs/import.md)
 
-## `import.js` v1.0.0
+### `copy.js`[未完成]
 
-リポジトリは[こちら](docs/import.md)
+- 概要: コピー機能を実装する予定のスクリプトです(開発中)。
+- 詳細ドキュメント: [copy.md](docs/copy.md)
