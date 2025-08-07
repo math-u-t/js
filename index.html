@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+  <meta charset="UTF-8">
+  <title>JavaScriptフレームワーク</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="簡単で便利なJavaScriptフレームワークを提供しています。ウェブ開発者向けサービス">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FontAwesome CDN読み込み -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header aria-label="サイトの紹介">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">JavaScriptフレームワーク</h1>
+        <p class="hero-subtitle">素晴らしいものを作る</p>
+        <p class="hero-description">
+          私の作成した、簡単で便利なJavaScriptフレームワークを提供しています。<br>
+          ウェブ開発者にとって便利なツールを開発・実験します。
+        </p>
+      </div>
+    </div>
+  </header>
+  <main aria-label="サイトのコンテンツ">
+    <div class="search">
+      <div class="search-square">
+        <i class="fas fa-search"></i>
+      </div>
+      <input class="search-input" type="text" placeholder="フレームワークを検索..." aria-label="フレームワーク検索">
+    </div>
+    <section class="src-grid">
+      <div class="src-card" data-tag="copy,dummy">
+        <h2 class="src-title">
+          <a href="docs/copy.md">copy.js[未完成]</a>
+        </h2>
+        <p class="src-description">
+          <code>&ltscript&gt</code>タグ内でコードを作成せずに、簡単に「コピー」を制御できます。<br>
+          リアルタイムでの検出ができるため、容易にカスタマイズできます。
+        </p>
+        <div class="src-github">
+          <div class="src-square">
+            <i class="fas fa-brands fa-github"></i>
+          </div>
+          <h3>
+            <a href="https://github.com/math-u-t/src/copy.js" target="_blank">リポジトリを確認する</a>
+          </h3>
+        </div>
+        <p class="src-day">最終編集 2025.08.06</p>
+        <div class="src-data-tag">
+          <ul>
+            <li>#copy</li>
+            <li>#dummy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="src-card" data-tag="import,file">
+        <h2 class="src-title">
+          <a href="docs/import.md">import.js</a>
+        </h2>
+        <p class="src-description">
+          同じhtmlファイルやmdファイルを容易に総括できます。<br>
+          pathを使用してテンプレート化できます。
+        </p>
+        <div class="src-github">
+          <div class="src-square">
+            <i class="fas fa-brands fa-github"></i>
+          </div>
+          <h3>
+            <a href="https://github.com/math-u-t/src/import.js" target="_blank">リポジトリを確認する</a>
+          </h3>
+        </div>
+        <div class="src-day">
+          <p>最終編集 2025.08.06</p>
+        </div>
+        <div class="src-data-tag">
+          <ul>
+            <li>#import</li>
+            <li>#file</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <nav class="footer" aria-label="サイトの参照リンク">
+      <ul>
+        <li>
+          <i class="fas fa-folder"></i>
+          <a href="https://github.com/math-u-t/src" target="_blank">GitHub リポジトリ</a>
+        </li>
+        <li>
+          <i class="fas fa-exclamation-circle"></i>
+          <a href="https://github.com/math-u-t/src" target="_blank">GitHub 問題</a>
+        </li>
+        <li>
+          <i class="fas fa-code-branch"></i>
+          <a href="https://github.com/math-u-t/src" target="_blank">GitHub 協力</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="copyleft">
+      <a href="LICENSE">オープンソース<i class="fas fa-solid fa-star"></i></a>
+    </p>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const searchInput = document.querySelector('.search-input');
+      const cards = document.querySelectorAll('.src-card');
+
+      searchInput.addEventListener('input', function () {
+        const query = this.value.toLowerCase();
+
+        cards.forEach(card => {
+          const tags = card.dataset.tag.toLowerCase();
+
+          if (tags.includes(query)) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
