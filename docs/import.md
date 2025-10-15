@@ -43,7 +43,7 @@
 HTML の `<head>` 内に次のように記述してください。
 
 ```html
-<script src="https://math-u-t.github.io/src/import.js" defer></script>
+<script src="https://math-u-t.github.io/js/import.js" defer></script>
 ```
 
 ### コンテンツの読み込み
@@ -90,7 +90,7 @@ HTML の `<head>` 内に次のように記述してください。
   2. Fallback CDN
 
      ```
-     https://math-u-t.github.io/marh-u-t/src/markdown.css
+     https://math-u-t.github.io/marh-u-t/js/markdown.css
      ```
 
 - `style.css`
@@ -109,7 +109,7 @@ HTML の `<head>` 内に次のように記述してください。
 <head>
   <meta charset="UTF-8">
   <title>インポートデモ</title>
-  <script src="https://math-u-t.github.io/src/import.js" defer></script>
+  <script src="https://math-u-t.github.io/js/import.js" defer></script>
 </head>
 <body>
   <import src="intro.md"></import>

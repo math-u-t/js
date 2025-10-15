@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           // MarkdownスタイルのCSSを一度だけ読み込む
           if (!markdownCssLoaded) {
             const localCssUrl = "markdown.css";
-            const fallbackCssUrl = "https://math-u-tgithub.io/marh-u-t/src/markdown.css";
+            const fallbackCssUrl = "https://math-u-tgithub.io/marh-u-t/js/markdown.css";
 
             try {
               const localRes = await fetch(localCssUrl, { method: "HEAD" });
