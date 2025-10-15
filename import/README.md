@@ -43,7 +43,7 @@
 HTML の `<head>` 内に次のように記述してください。
 
 ```html
-<script src="https://math-u-t.github.io/js/import.js" defer></script>
+<script src="https://math-u-t.github.io/js/import/base.js" defer></script>
 ```
 
 ### コンテンツの読み込み

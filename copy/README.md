@@ -7,7 +7,7 @@ JSでDOMをリアルタイム検出＆属性を置き換えをすることでダ
 ## 使い方
 
 ```html
-<script src="math-u-t.github.io/copy-js/dist/copy.js"></script>
+<script src="https://math-u-t.github.io/js/copy/base.js"><script>
 ```
 
 をheadタグ内に貼り付けることで使用できます。
@@ -15,7 +15,7 @@ JSでDOMをリアルタイム検出＆属性を置き換えをすることでダ
 |属性|説明|
 |-|-|
 |`copy`|コピーしたときの実際にコピーされるテキストを示します。|
-|'type`|コピーする対象を示します。|
+|`type`|コピーする対象を示します。|
 
 ## デモ
 
